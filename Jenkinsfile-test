@@ -1,0 +1,38 @@
+node{
+  stage('Scm checkout'){ 
+    git credentialsId: 'e3ba15a6-29db-42ea-a0c4-7dff567b60a1', url: 'ssh://git@git.trianz.com:2244/COSMOS/UserInterface.git', branch: 'test'
+
+  }
+  stage('Build docker Image') {
+    sh 'docker build . -t user-interface'
+  }
+  stage('Push docker Image') {
+    withCredentials([string(credentialsId: 'n_ip', variable: 'n_ip'), string(credentialsId: 'n_un', variable: 'n_un'), string(credentialsId: 'n_pw', variable: 'n_pw')]) {
+    
+      GIT_SHORT_COMMIT=sh(returnStdout:true, script:"git log -n 1 --pretty=format:'%h'").trim()
+      HELM_LIST_REVISION=sh(returnStdout:true, script:"helm history user-interface-helm | awk '{ REVISION =\$1 }; END { print REVISION }'").trim()
+      //sh 'echo ${n_ip} ${n_un} ${n_pw}'
+      //sh 'docker login ${n_ip} -u ${n_un} -p ${n_pw}'
+      
+      def TAG=HELM_LIST_REVISION+'-'+GIT_SHORT_COMMIT+'-'+BUILD_NUMBER;
+      sh '''docker tag user-interface imgregistry.concierto.in/user-interface:'''+TAG+''' '''
+      sh 'docker tag user-interface imgregistry.concierto.in/user-interface:latest'
+      sh 'docker push imgregistry.concierto.in/user-interface:latest'
+      sh '''docker push imgregistry.concierto.in/user-interface:'''+TAG+''' '''
+    }
+  }
+  stage('Test') {
+    sh 'date' 
+  }
+  stage('Deploy') {
+    //sh 'echo ${BUILD_NUMBER}'
+    def TAG=HELM_LIST_REVISION+'-'+GIT_SHORT_COMMIT+'-'+BUILD_NUMBER;
+    sh '''helm upgrade --set image.tag='''+TAG+''' user-interface-helm ./user-interface-helm-test'''
+  }
+  stage('Clean Up') {
+    def TAG=HELM_LIST_REVISION+'-'+GIT_SHORT_COMMIT+'-'+BUILD_NUMBER;
+    sh '''docker rmi -f imgregistry.concierto.in/user-interface:'''+TAG+''' '''
+    sh '''docker rmi -f imgregistry.concierto.in/user-interface:'''+TAG+''' '''
+    sh 'docker rmi -f user-interface'
+  }
+}

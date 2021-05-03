@@ -1,0 +1,32 @@
+node{
+  
+  stage('Scm checkout'){
+    git credentialsId:'ekspoc-jenkins-priv-key', url:'ssh://git@git.trianz.com:2244/COSMOS/UserInterface.git', branch:'new-Concierto'
+  }
+  GIT_SHORT_COMMIT=sh(returnStdout:true, script:"git log -n 1 --pretty=format:'%h'").trim()
+  def TAG=BUILD_NUMBER+'-'+GIT_SHORT_COMMIT;
+  stage('Build docker Image') {
+    sh'docker build . -t user-interface'
+  }
+  stage('Tagging and Pushing') {
+    withCredentials([string(credentialsId:'n_ip', variable:'n_ip'), string(credentialsId:'n_un', variable:'n_un'), string(credentialsId:'n_pw', variable:'n_pw')]) {
+      
+    sh '''echo TAG:'''+TAG+''' '''
+    sh '''docker tag user-interface imgregistry.concierto.in/user-interface:'''+TAG+''' '''
+    sh 'docker tag user-interface imgregistry.concierto.in/user-interface:staging'
+    sh 'docker push imgregistry.concierto.in/user-interface:staging'
+    sh '''docker push imgregistry.concierto.in/user-interface:'''+TAG+''' '''
+    }
+  }
+  stage('Docker deploy'){
+    def dockerrun = "docker service update --image imgregistry.concierto.in/user-interface:${TAG} ui"
+    sshagent(['docker-master-priv-key']) {
+    sh "ssh -o StrictHostKeyChecking=no ubuntu@192.168.111.29 ${dockerrun}"
+	}
+  }
+    stage('Clean Up') {
+    sh '''docker rmi -f imgregistry.concierto.in/user-interface:'''+TAG+''' '''
+    sh 'docker rmi -f imgregistry.concierto.in/user-interface:staging'
+    sh 'docker rmi -f user-interface'
+  }
+}
