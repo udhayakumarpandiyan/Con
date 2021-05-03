@@ -1,0 +1,217 @@
+/* @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Open Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOUuhp.woff2) format('woff2');
+  } */
+
+  input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid gray;
+    text-align: left;
+    font: normal normal normal 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #484848;
+    opacity: 1;
+  }
+
+  .label-style {
+    text-align: left;
+    font: normal normal 600 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #484848;
+    opacity: 1;
+  }
+
+  .header-style {
+    text-align: left;
+    font: normal normal bold 20px/27px Open Sans;
+    letter-spacing: 0px;
+    color: #484848;
+    opacity: 1;
+  }
+
+  ol {
+    counter-reset: item
+  }
+
+  li {
+    display: block
+  }
+
+  li:before {
+    counter-increment: item
+  }
+
+.header-controls{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.search{
+    padding: 4px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 75%
+}
+.search-button{
+    border-radius: 0px;
+    padding: 4.72px 14px;
+    float: left;
+    background: rgb(33, 150, 243);
+    margin-right: 15px
+}
+.add-button{
+    border-radius: 4px;
+    border: none;
+    float: left;
+    height: 40px;
+    width: 146px;
+    font-size: 16px;
+    background: #593CAB;
+    color: #fff;
+
+};
+
+.select-style {
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #5C3EB0;
+opacity: 1;
+}
+
+td
+{
+ overflow: hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+}
+
+.header-style {
+text-align: left;
+font: normal normal 600 39px/58px Open Sans;
+letter-spacing: 0px;
+color: #222222;
+opacity: 1;
+}
+
+.custom {
+  width: 643px;
+  height: 767px;
+  border: 1px solid var(--grey-4);
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 10px #A3A3A333;
+  border: 1px solid #F2F2F2;
+  opacity: 1;
+}
+
+.add-article-title {
+  text-align: left;
+  font: normal normal 600 1.56rem Open Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+
+.close-btn {
+background: #000000 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.label-text-style {
+text-align: left;
+font: normal normal normal 1rem Open Sans;
+letter-spacing: 0px;
+color: #484848;
+opacity: 1;
+}
+
+.add-article-input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid #F2F2F2;
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+
+.add-article-select {
+  border: 0px;
+  outline: 0px;
+  background: transparent;
+  border-bottom: 2px solid #F2F2F2;
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+
+button.multiselect {
+  background-color: initial;
+  border: 1px solid #ced4da;
+}
+
+.ql-editor{
+  min-height:320px;
+}
+
+.save-btn {
+width: 67px;
+height: 32px;
+border: 1px solid var(--primary-1);
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #593CAB;
+opacity: 1;
+text-align: left;
+font: normal normal normal 1rem Open Sans;
+letter-spacing: 0px;
+color: #593CAB;
+text-transform: capitalize;
+opacity: 1;
+padding-left: 16px;
+padding-bottom: 5px;
+padding-top: 5px;
+padding-right: 16px;
+}
+
+.multi-select {
+  --rmsc-main: #4285f4;
+  --rmsc-hover: #f1f3f5;
+  --rmsc-selected: #e2e6ea;
+  --rmsc-border: #ccc;
+  --rmsc-gray: #aaa;
+  --rmsc-bg: #fff;
+  --rmsc-p: 10px; /* Spacing */
+  --rmsc-radius: 4px; /* Radius */
+  --rmsc-h: 38px; /* Height */
+}
+
+.article-details-input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid #F2F2F2;
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  opacity: 1;
+  text-align: left;
+  color: #484848;
+}
+
+

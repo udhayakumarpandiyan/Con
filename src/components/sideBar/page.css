@@ -1,0 +1,142 @@
+/* .sidebar {
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+} */
+
+.home {
+    content: url('../assets/resources/home-icon.svg');
+}
+
+.events {
+    content: url('../assets/resources/events-icon.svg');
+}
+
+.tickets {
+    content: url('../assets/resources/tickets-icon.svg');
+}
+
+.userDir {
+    content: url('../assets/resources/userDir-icon.svg');
+}
+
+.orchestartion-home {
+    content: url('../../assets/icons/dashboard.svg');
+    width: 2.7rem;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 5rem;
+    background-color: #fff;
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; */
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: auto;
+}
+
+.sidebar a:hover:not(.active) {
+    color: white;
+}
+
+.sidebar .active {
+    filter: invert(29%) sepia(32%) saturate(1771%) hue-rotate(222deg) brightness(96%) contrast(105%);
+}
+
+.nav-div {
+    padding: 0.5rem 0.05rem;
+}
+
+.nav-text {
+    font-size: 0.75rem;
+    text-align: center;
+    padding-top: 0.3125rem;
+    color: #7D7F7D;
+}
+
+.active-color {
+    color: #5C3EB0;
+}
+
+.sub-menu {
+    transform: none !important;
+    left: 100% !important;
+    width: 75px;
+    max-width: 75px;
+    z-index: 9999;
+}
+
+.sidebar .dropdown:hover>.dropdown-menu {
+    display: initial;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.jobs-icon {
+    content: url('../../assets/icons/Jobs.svg');
+}
+
+.templates-icon {
+    content: url('../../assets/icons/templates.svg');
+}
+
+.schedules-icon {
+    content: url('../../assets/icons/schedules.svg');
+}
+
+.credentials-icon {
+    content: url('../../assets/icons/credentials.svg');
+}
+
+.projects-icon {
+    content: url('../../assets/icons/projects.svg');
+}
+
+.inventories-icon {
+    content: url('../../assets/icons/inventories.svg');
+}
+
+.hosts-icon {
+    content: url('../../assets/icons/Hosts.png');
+}
+
+.sub-nav-div {
+    padding: 0.3rem 0.05rem;
+}
+
+.aws-menu{
+    content: url('../assets//resources/AWSInventory.svg');
+}
+.request-menu{
+    content: url('../assets//resources/requestForm.svg');
+}
+.kb-menu{
+    content: url('../assets//resources/knowledgeBase.svg');
+    width: 1.5rem;
+}
+
+.inventory-home {
+    content: url('../../assets/icons/Inventories.png');
+    width: 2.7rem;
+}
+.azure-menu{
+    content: url('../assets//resources/Azure-Inventory.png');
+}
+.reports{
+    content: url('../assets//resources/reports.svg');
+    width: 1.7rem;
+}

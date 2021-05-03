@@ -1,0 +1,199 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: {{ template "user-interface.fullname" . }}
+  labels:
+    app: {{ template "user-interface.name" . }}
+    chart: {{ template "user-interface.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ template "user-interface.name" . }}
+      release: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ template "user-interface.name" . }}
+        release: {{ .Release.Name }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: REACT_APP_SVC_USER_DIRECTORY
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_user_directory
+            - name: REACT_APP_SVC_ADMINISTRATOR
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_administrator
+            - name: REACT_APP_SVC_CLIENT_DIRECTORY
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_client_directory
+            - name: REACT_APP_SVC_MASTER_DB
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_master_db
+            - name: REACT_APP_SVC_ADMIN_TICKET_SETTINGS
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_admin_ticket_settings
+            - name: REACT_APP_SVC_PLANNED_ACTIVITY
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_planned_activity
+            - name: REACT_APP_SVC_REQUEST_FORM
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_request_form
+            - name: REACT_APP_SVC_CHANGE_REGISTER
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_change_register
+            - name: REACT_APP_SVC_REPORTING
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_reporting
+            - name: REACT_APP_SVC_TICKETING
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_ticketing
+            - name: REACT_APP_SVC_SCHEDULED_TASK
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_scheduled_task
+            - name: REACT_APP_SVC_MINUTES_OF_MEETING
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_minutes_of_meeting
+            - name: REACT_APP_SVC_HEALTH_BOARD
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_health_board
+            - name: REACT_APP_SVC_HOST_INVENTORY
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_host_inventory
+            - name: REACT_APP_SVC_ROOT_CAUSE_ANALYSIS
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_root_cause_analysis
+            - name: REACT_APP_SVC_PROJECT_MANAGEMENT
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_project_management
+            - name: REACT_APP_SVC_AUTH_SERVER
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_auth_server
+            - name: REACT_APP_SVC_VAULT
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_vault
+            - name: REACT_APP_SVC_AUTH_SERVER
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_auth_server
+            - name: REACT_APP_SVC_SERVICE_CATALOG
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_catalog
+            - name: REACT_APP_SAML
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_saml_idp
+            - name: REACT_APP_SVC_ORCHESTRATION
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_orchestration
+            - name: REACT_APP_SVC_ERE
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_ere
+            - name: REACT_APP_SVC_CEMSOCKET
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_cemsocket
+            - name: REACT_APP_SVC_PRODUCT_CONFIGURATION
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_product_configuration
+            - name: REACT_APP_SVC_MONITORING_EVENT_LISTENER
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_monitoring_event_listener
+            - name: REACT_APP_SVC_KNOWLEDGE_BASE
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_knowledge_base
+            - name: REACT_APP_SVC_AUTO_DOC
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_autodoc_internal
+            - name: REACT_APP_SVC_SUPER_ADMIN
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_super_admin
+            - name: REACT_APP_SVC_DOCUMENT_MGMT 
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_document_mgmt
+            - name: REACT_APP_SVC_MODE 
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-service-endpoint-configmap
+                  key: svc_mode 
+          ports:
+            - name: http
+              containerPort: 3000
+              protocol: TCP
+          resources:
+{{ toYaml .Values.resources | indent 12 }}
+    {{- with .Values.nodeSelector }}
+      nodeSelector:
+{{ toYaml . | indent 8 }}
+    {{- end }}
+    {{- with .Values.affinity }}
+      affinity:
+{{ toYaml . | indent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+{{ toYaml . | indent 8 }}
+    {{- end }}

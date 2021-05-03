@@ -1,0 +1,31 @@
+.text-content {
+    color: #484848;
+}
+
+.border-btm-width {
+    width: 270px;
+    border: none;
+    border-bottom: 1px solid #484848;
+}
+
+.border-btm {
+    border: none;
+    border-bottom: 1px solid #484848;
+}
+
+#addMuteWindow .css-2b097c-container {
+    width: 100%;
+}
+
+.modal-footer {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+#addMuteWindow .css-yk16xz-control {
+    border: none;
+    border-bottom: 1px solid #c5c0c0;
+    margin-top: 4px;
+}

@@ -1,0 +1,688 @@
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  width: 2px;
+  height: 100%;
+  z-index: 99 !important;
+}
+
+ul.timeline>li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul.timeline>li:before {
+  content: ' ';
+  background: #5c3eb0;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid white;
+  left: -9px;
+  width: 20px;
+  height: 20px;
+  z-index: 100 !important;
+}
+
+.btn-group button {
+  background-color: #f2f2f2;
+  border: 0px;
+  color: #505050;
+  padding: 6px 12px;
+  /* Some padding */
+  margin: 10px;
+  float: left;
+  /* Float the buttons side by side */
+}
+
+.btn-resolve {
+  background-color: #5c3eb0;
+  border: 0px;
+  color: #ffffff;
+  padding: 6px 30px;
+  /* Some padding */
+  margin: 10px;
+}
+
+.button {
+  background-color: #5c3eb0;
+  border: 0px;
+  color: #ffffff;
+  padding: 2px 30px;
+  /* Some padding */
+}
+
+.spanStyles label, #ticketDetailsSpan label {
+  display: block;
+}
+
+.spanStyles label span, #ticketDetailsSpan label span {
+  color: #8d8d8d;
+  display: inline-block;
+  text-align: left;
+  width: 150px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+text {
+  margin-left: 5px;
+}
+
+p {
+  clear: right;
+  margin-left: 30px;
+}
+
+@media only screen and (min-width: 772px) {
+  .td div:nth-child(5):after {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(to bottom, silver 50%, rgba(255, 255, 255, 0) 40%);
+    background-repeat: repeat-y;
+    height: 9.375rem;
+    width: 1px;
+    top: 10%;
+    right: -1%;
+  }
+}
+
+.ellipsis::after {
+  content: "...";
+  position: absolute;
+  right: -4px;
+  bottom: -7px;
+}
+
+.text-concat {
+  position: relative;
+  display: inline-block;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 3.6em;
+  line-height: 1.2em;
+  text-align: left;
+  font-family: Open Sans;
+  font-size: 2rem;
+}
+
+.td-head-text {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #484848;
+}
+
+.head-data {
+  text-align: left;
+  font: normal normal 600 1.5625rem Open Sans;
+  letter-spacing: 0px;
+  color: #484848;
+  opacity: 1;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  content: ">";
+}
+
+.edit-td {
+  background: #593CAB 0% 0% no-repeat padding-box;
+  text-align: center;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  opacity: 1;
+  width: 5.25rem;
+  height: 2.2rem;
+  padding: 0.3rem 0rem;
+}
+
+/* teams tab styles */
+
+.teamBox {
+  margin: 10px;
+  float: left;
+  background: #FFFFFF;
+  overflow: auto;
+  width: 381px;
+  height: 594px;
+  border: 0.5px solid #C1C2C2;
+  position: relative;
+  z-index: 999;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.teamHead {
+  background: #464775 0% 0% no-repeat padding-box;
+  opacity: 1;
+  height: 4.2rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.teamSubBox {
+  color: #1f1d1d;
+  margin: 10px 10px 10px 20px;
+  font-weight: bold;
+  height: auto;
+  width: 89%;
+}
+
+.teamRow {
+  padding: 10px 0px;
+}
+
+.teamText {
+  padding: 10px 10px 10px 0px;
+  width: 100%;
+  color: #707070;
+  font-size: 13px;
+}
+
+.channelText {
+  border: 0px solid #ccc;
+  display: inline-block;
+  width: 65%;
+  margin-left: 20px;
+  color: #707070;
+  font-size: 12px;
+  cursor: default;
+}
+
+.channelText:hover {
+  color: #000000
+}
+
+.teamIcon {
+  margin-right: 10px;
+  background: #2DC241 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  color: #FFF;
+  height: 36px;
+  width: 36px;
+  display: inline-block;
+  line-height: 33px;
+  text-align: center;
+}
+
+.teamArrow {
+  padding: 0px 2px 0px 4px;
+  opacity: 1;
+  color: #5D5D5D;
+  display: inline-block;
+  line-height: 33px;
+  text-align: center;
+}
+
+.teamBoxFooter {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.ul-list, #myUL {
+  list-style-type: none;
+  padding-left: 0px;
+  font-weight: bold;
+}
+
+/* Style the caret/arrow */
+
+.caret {
+  cursor: pointer;
+  user-select: none;
+  /* Prevent text selection */
+  width: 87%;
+  display: inline-block;
+  padding: 4px;
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+
+.caret::before {
+  content: "›";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+
+.caret-down {
+  background: #F4F4F4;
+}
+
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+
+.nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+
+.active {
+  display: block;
+}
+
+.active-team {
+  display: block;
+}
+
+.teams-mess {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.teams-head {
+  width: 65%;
+  align-self: center;
+  text-align: left;
+  font-size: 1.5625rem;
+  font-family: Open Sans;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.close-x {
+  align-self: right;
+  margin-top: 20px;
+  color: #FFF;
+}
+
+.btm-border {
+  border-bottom: 1px solid #e8dfdf;
+  padding-bottom: 0.75rem;
+}
+
+.ms-tab-sub {
+  background: #F2F2F2 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.subject-ms {
+  font-size: 1rem;
+  font-family: Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.send-msg-box {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  /* border: 0.5px solid #c7c4c4; */
+  opacity: 1;
+  margin-left: 10px;
+  text-align: left;
+  font: normal normal 600 12px/24px Open Sans;
+  letter-spacing: 0px;
+  color: #4A4A4A;
+  opacity: 1;
+  width: 20rem;
+  width: 100%;
+}
+
+.circle {
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  background: #7A7A7A 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.messg-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 3.6em;
+  line-height: 1.8em;
+  border-bottom: 0.5px solid #c7c4c4;
+  padding-left: 10px;
+  font-size: 0.9rem;
+  font-family: Open Sans;
+}
+
+.reply-btn {
+  text-align: left;
+  font: normal normal normal 12px/24px Open Sans;
+  letter-spacing: 0px;
+  color: #5C3EB0;
+  opacity: 1;
+  padding-left: 10px;
+}
+
+.teams-blue-icon {
+  content: url('../../assets/resources/microsoft-teams-blue-icon.svg');
+  width: 2rem !important;
+  margin: 0px 10px;
+}
+
+.outlook-icon {
+  content: url('../../assets/resources/outlook.svg');
+  width: 2rem !important;
+  margin: 0px 10px;
+}
+
+.zoom-icon {
+  content: url('../../assets/resources/zoom.svg');
+  width: 2rem !important;
+  margin: 0px 10px;
+}
+
+.active-channel {
+  color: #000;
+  background-color: #efefef;
+}
+
+.textarea-bg {
+  border-bottom: 0.5px solid rgb(199, 196, 196);
+  background: none;
+  border-top: 0.5px solid rgb(199, 196, 196);
+}
+
+.MuiFormControl-root {
+  background: #F2F2F2;
+  width: 100%;
+  margin: 0px !important;
+}
+
+.more-actions-btns {
+  padding: 0px !important;
+  background-color: #fff !important;
+  margin: 4px !important;
+}
+
+.more-dw {
+  background: #E6E6E6 !important;
+  border-radius: 0 !important;
+}
+
+.ticket-details-card-title {
+  text-align: left;
+  font: normal normal 600 1.563rem Open Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+
+.ticket-details-card-label {
+  text-align: left;
+  font: normal normal 600 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #484848;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.ticket-details-card-text {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #484848;
+  opacity: 1;
+}
+
+.tickets-details-timeline-small {
+  text-align: left;
+  font: normal normal normal 0.75rem Open Sans;
+  letter-spacing: 0px;
+  color: #484848;
+  opacity: 1;
+}
+
+.ticket-details-timeline-p {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #484848;
+  text-transform: capitalize;
+  opacity: 1;
+  font-family: Open Sans Bold;
+  margin: 0.5rem 0rem;
+}
+
+.ticket-details-modal-header {
+  text-align: left;
+  font: normal normal 600 1.56rem Open Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+
+.ticket-details-modal-label {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #484848;
+  opacity: 1;
+}
+
+.ticket-details-modal-save-btn {
+  margin-right: 1.375rem;
+  border: 0.063rem solid #593CAB;
+  cursor: pointer;
+  color: #593CAB
+}
+
+.ticket-details-header-breadcrumb {
+  text-align: left;
+  font: normal normal normal 1.25rem Open Sans;
+  letter-spacing: 0px;
+  color: #484848;
+  opacity: 1;
+}
+
+.ticket-details-header-title {
+  text-align: left;
+  font: normal normal 600 1.94rem Open Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+
+.ticket-details-header-text {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #484848;
+  opacity: 1;
+}
+
+.div-head {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #484848;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.div-text {
+  text-align: left;
+  font: normal normal 600 1.2rem Open Sans;
+  letter-spacing: 0px;
+  color: #484848;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.ticket-details-header-p {
+  text-align: left;
+  font: normal normal 600 1.94rem Open Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+  max-lines: 2;
+  text-overflow: ellipsis;
+}
+
+.multi-line-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.teams-send-message-head {
+  text-align: left;
+  font: normal normal normal 1.56rem Open Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.teams-send-message-text {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.outlook-window-head {
+  text-align: left;
+  font: normal normal normal 1.37rem Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.outlook-window-to-name {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.outlook-window-to {
+  text-align: left;
+  font: normal normal 600 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #5D5D5D;
+  opacity: 1;
+}
+
+.outlook-window-sub {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.outlook-window-ticket {
+  text-align: left;
+  font: normal normal bold 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.outlook-window-badge-text {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.teams-send-message-textarea {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.button1 {
+  border-radius: 25px;
+  border: 1px solid #61c7b9;
+  background-color: white;
+  padding: 5px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  width: 75%;
+}
+
+.card-height {
+  height: 515px;
+}
+
+#vt a {
+  color: #0254EB
+}
+
+#vt a:visited {
+  color: #0254EB
+}
+
+#vt .comment {
+  width: 400px;
+  background-color: #f0f0f0;
+  margin: 10px;
+}
+
+#vt a.morelink {
+  text-decoration: none;
+  outline: none;
+}
+
+#vt .morecontent span {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .joboutput-modal-content {
+    min-width: 790px !important;
+  }
+}
+
+.joboutput-modal-content {
+  width: 65%;
+}

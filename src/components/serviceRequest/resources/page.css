@@ -1,0 +1,274 @@
+.request .custom-modal-content {
+    width: 643px;
+    border: 1px solid var(--grey-4);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 10px #A3A3A333;
+    border: 1px solid #F2F2F2;
+    opacity: 1;
+}
+
+.request option {
+    text-align: left;
+    font: normal normal normal 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+}
+
+.request .save-btn {
+    text-align: left;
+    font: normal normal normal 16px Open Sans;
+    letter-spacing: 0px;
+    color: #593CAB;
+    text-transform: capitalize;
+    opacity: 1;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #593CAB;
+    min-width: 2.5rem !important;
+}
+
+.request .cancel-btn {
+    text-align: left;
+    font: normal normal normal 16px Open Sans;
+    letter-spacing: 0px;
+    color: #484848;
+    opacity: 1;
+}
+
+.request .close-btn {
+    /* color: #000000; */
+    /* background: #000000 0% 0% no-repeat padding-box; */
+    /* opacity: 1; */
+}
+
+.request .label-style {
+    text-align: left;
+    font: normal normal normal 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #484848;
+    opacity: 1;
+}
+
+.request input[type='file'] {
+    color: transparent;
+    border: 0px;
+}
+
+.new-service-request-custom { 
+    width: 643px;
+    border: 1px solid var(--grey-4);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 10px #A3A3A333;
+    border: 1px solid #F2F2F2;
+    opacity: 1;
+ } 
+
+.new-service-request-select {
+border: 0;
+outline: 0;
+background: transparent;
+border-bottom: 2px solid #F2F2F2;
+width: 100%;
+text-align: left;
+font: normal normal normal 1rem Open Sans;
+letter-spacing: 0px;
+color: #222222;
+opacity: 1;
+}
+
+.new-service-request-option {
+text-align: left;
+font: normal normal normal 1rem Open Sans;
+letter-spacing: 0px;
+color: #222222;
+opacity: 1;
+}
+
+.new-service-request-input {
+border: 0;
+outline: 0;
+background: transparent;
+border-bottom: 2px solid #F2F2F2;
+text-align: left;
+font: normal normal normal 1rem Open Sans;
+letter-spacing: 0px;
+color: #222222;
+opacity: 1;
+}
+
+
+.save-btn{
+text-align: left;
+font: normal normal normal 16px Open Sans;
+letter-spacing: 0px;
+color: #593CAB;
+text-transform: capitalize;
+opacity: 1;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #593CAB;
+}
+
+.cancel-btn {
+text-align: left;
+font: normal normal normal 16px Open Sans;
+letter-spacing: 0px;
+color: #484848;
+opacity: 1;
+}
+
+.close-btn {
+color: #000000;
+background: #000000 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.new-service-request-label-style {
+text-align: left;
+font: normal normal normal 1rem Open Sans;
+letter-spacing: 0px;
+color: #484848;
+opacity: 1;
+}
+
+input[type='file'] {
+color: transparent;
+border: 0px;
+}
+
+
+
+input[type="date"] {
+border: 0;
+outline: 0;
+background: transparent;
+border-bottom: 2px solid #F2F2F2;
+width: 100%
+}
+
+input[type="date"]:after {
+font-family: "FontAwesome"; 
+font-weight: 900; 
+content: "\f073";
+color: #7D7F7D;
+padding: 0 5px;
+}
+
+
+::-webkit-calendar-picker-indicator {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+width: auto;
+height: auto;
+color: transparent;
+background: transparent;
+}
+
+.new-service-request-title {
+text-align: left;
+font: normal normal 600 25px/37px Open Sans;
+letter-spacing: 0px;
+color: #222222;
+opacity: 1;
+}
+
+.ipr-th { 
+    text-align: left;
+    font: normal normal 600 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #484848;
+    opacity: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+    
+    .ipr-td{
+    text-align: left;
+    font: normal normal normal 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #484848;
+    text-transform: capitalize;
+    opacity: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+   
+    .button-style {
+    width: 101px;
+    height: 32px;
+    background: #5C3EB0 0% 0% no-repeat padding-box;
+    border:  #5C3EB0;
+    opacity: 1;
+    margin-left: 10px;
+    }
+    
+    .btn-text-style {
+    text-align: left;
+    font: normal normal normal 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    }
+    
+    .td-select {
+    height: 32px;
+    background: var(--background) 0% 0% no-repeat padding-box;
+    background: #F3F3F3 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border:#F3F3F3;
+    }
+    
+    .td-input {
+    height: 32px;
+    background: var(--background) 0% 0% no-repeat padding-box;
+    background: #F3F3F3 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border:#F3F3F3;
+    }
+    
+    .ipr-select {
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 2px solid #F2F2F2;
+        width: 100%;
+        text-align: left;
+        font: normal normal normal 1rem Open Sans;
+        letter-spacing: 0px;
+        color: #222222;
+        opacity: 1;
+      }
+      
+      .ipr-option {
+      text-align: left;
+      font: normal normal normal 1rem Open Sans;
+      letter-spacing: 0px;
+      color: #222222;
+      opacity: 1;
+      }
+      
+      .ipr-label-style {
+        text-align: left;
+        font: normal normal normal 1rem Open Sans;
+        letter-spacing: 0px;
+        color: #484848;
+        opacity: 1;
+        }
+
+        
+.ipr-header-label-style {
+    text-align: left;
+    font: normal normal 600 20px/37px Open Sans;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+    }
+
+
+    .trash-icon-color {
+        color:"#5D5D5D";
+    }

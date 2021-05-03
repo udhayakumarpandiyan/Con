@@ -1,0 +1,46 @@
+.ticket-link {
+    color: #298BCC;
+}
+
+.cr-table thead th {
+    font: normal normal bold 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #484848;
+    opacity: 1;
+    border-top: none !important;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.obselete-icon {
+    margin-bottom: 4px;
+}
+
+.add-btn-text {
+    color: #1a1af1;
+}
+
+.cr-table {
+    table-layout: fixed;
+}
+
+.cr-table th:last-child {
+    width: 85px;
+    max-width: 95px;
+}
+
+.cr-table td {
+    max-width: 0px;
+    padding: 14px 10px;
+    overflow: visible !important;
+    text-overflow: initial !important;
+    white-space: normal !important;
+  }
+
+.width-60 {
+    max-width: 60px;
+}

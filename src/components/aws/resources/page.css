@@ -1,0 +1,195 @@
+.aws-header-buttons {
+    font: normal normal normal 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #5C3EB0;
+    text-transform: capitalize;
+    opacity: 1;
+    min-width: 7.25rem;
+    min-height: 2.5rem;
+    border: 1px solid #5C3EB0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    margin: 0px 6px;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.aws-add-new {
+    background: #593CAB 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+.hots-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+.hots-actions button {
+    /* background: #F2F2F2 0% 0% no-repeat padding-box; */
+    opacity: 1;
+    border: none;
+    font: normal normal 600 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #5D5D5D;
+    margin: 0px 0.4rem;
+    height: 2rem;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.has-search input {
+    width: 13.75rem !important;
+    height: 2rem;
+    border-radius: 0;
+}
+
+.aws-table thead th {
+    border-top: none;
+}
+
+.aws-table thead th span {
+    text-align: left;
+    font: normal normal 600 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.aws-table tbody span {
+    text-align: left;
+    font: normal normal normal 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #484848;
+    opacity: 1;
+    word-break: break-word;
+}
+
+.aws-col-name {
+    width: 140px;
+    max-width: 150px;
+}
+
+.aws-col-account {
+    width: 150px;
+    max-width: 160px;
+}
+
+.aws-col-sn {
+    width: 65px;
+    max-width: 65px;
+}
+
+.aws-text-box {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid gray;
+    opacity: 1;
+}
+
+label {
+    color: #484848;
+}
+
+.btn-aws {
+    border: 1px solid var(--primary-1);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #593CAB;
+    opacity: 1;
+    text-align: left;
+    font: normal normal normal 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #593CAB;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.aws-col-inst {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-th-label {
+    text-align: left;
+    font: normal normal 600 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #484848;
+    opacity: 1;
+}
+
+.my-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+.my-table thead th, .my-table tbody td {
+    border-top: none;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.my-table td span {
+    color: #484848;
+}
+
+.my-table td {
+    color: #484848;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+
+.my-table thead th:first-child {
+    padding-left: 0.5rem;
+}
+
+.my-table tbody td:first-child {
+    padding-left: 0.5rem;
+}
+
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.save-btn {
+    text-align: left;
+    font: normal normal normal 16px Open Sans;
+    letter-spacing: 0px;
+    color: #593CAB;
+    text-transform: capitalize;
+    opacity: 1;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #593CAB;
+}
+
+.cancel-btn {
+    text-align: left;
+    font: normal normal normal 16px Open Sans;
+    letter-spacing: 0px;
+    color: #484848;
+    opacity: 1;
+}
+
+.export-icon-option {
+    /* // url('../assets/resources/export-icon.png') */
+    background-image: url('../../assets/resources/export-icon.png');
+}

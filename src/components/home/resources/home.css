@@ -1,0 +1,248 @@
+.title-head, .breached-ticktes {
+    font-size: 1.7625rem;
+    font-family: Open Sans;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #222222;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.ticket-details-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pr {
+    position: relative;
+}
+
+@media only screen and (min-width:1042px), (max-width:770px) {
+    .pr p {
+        font-size: 1.25rem;
+        color: #484848;
+        font-family: Open Sans;
+        display: inline-block;
+        /*float: left;*/
+    }
+}
+
+@media only screen and (max-width:770px) {
+    .pr {
+        width: 50%;
+        float: left;
+    }
+    .mat-5 {
+        margin-top: 5%;
+    }
+    .mat-11 {
+        margin-top: 11%;
+    }
+}
+
+.total {
+    color: #593CAB;
+}
+
+@media only screen and (min-width: 772px) {
+    .pr div:nth-child(5):after,.breached-pr div:nth-child(4):after {
+        position: absolute;
+        content: "";
+        background-image: linear-gradient(to bottom, silver 50%, rgba(255, 255, 255, 0) 40%);
+        background-repeat: repeat-y;
+        height: 9.375rem;
+        width: 1px;
+        top: 10%;
+        right: -1%;
+    }
+}
+
+.ml-20 {
+    margin-left: 20%;
+}
+
+.row {
+    margin: 0px;
+}
+
+.info {
+    content: url('../../assets/resources/info-icon.svg');
+    max-width: 1.1875rem;
+    margin-bottom: -3px;
+    position: relative;
+}
+
+.mr-2 {
+    margin-right: 1.25rem;
+}
+
+/* 
+.info:hover::after {
+    box-shadow: 0px 3px 10px #A3A3A333;
+    border: 0.30000001192092896px solid #66ACDA;
+} */
+
+.info:hover:after {
+    background: #333;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 5px;
+    border: 0.30000001192092896px solid #66ACDA;
+    bottom: -34px;
+    color: #fff;
+    content: attr(gloss);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 250px;
+}
+
+.info:hover:before {
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 0 6px 6px 6px;
+    bottom: -4px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+.sla-table {
+    width: 100%;
+    padding: 0rem 1rem;
+    height: 3.75rem;
+    display: table;
+}
+
+.sla-table-col {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #e4dfdf;
+    display: table-cell;
+    width: 14.2857142857%;
+}
+
+.total-ls {
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    display: table-cell;
+}
+
+.count {
+    margin-right: 6px;
+    font-size: 1.9rem;
+    margin-top: -0.25rem;
+}
+
+/* .sla-table-div {
+    padding: 0rem 4rem;
+} */
+
+.fs-2 {
+    font-size: 2rem;
+}
+
+.table-interval {
+    width: 100%;
+    padding: 0rem 1rem;
+    display: table;
+}
+
+.interval {
+    display: table-cell;
+    width: 14.2%;
+}
+
+.mb-5 {
+    margin-bottom: 3rem!important;
+    margin-left: 3%;
+}
+
+.td-text-font {
+    font-size: 2rem;
+    color: #484848;
+    font-family: 'OPEN SANS';
+    padding-left: 4%;
+}
+
+.font-size {
+    font-size: 2rem;
+    color: #484848;
+    font-family: 'OPEN SANS';
+}
+
+.home-page .table {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 100%;
+    font-size: 0.825rem;
+}
+
+.home-page .table thead th {
+    text-align: left;
+    font: normal normal 600 1rem Open Sans;
+    letter-spacing: 1px;
+    color: #35363A;
+    opacity: 1;
+    border: none !important;
+    /* max-width: 14.2857143%; */
+    text-overflow: ellipsis;
+}
+
+.home-page table td {
+    width: 14.2857143%;
+}
+
+.home-page table td, table th {
+    text-align: left;
+    max-width: 8.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.add-new-activity {
+    background: #593CAB;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+@media only screen and (max-width: 999px) {
+    .pa-es {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 100%;
+    }
+}
+
+.select-filters {
+    border: none;
+    margin: 0 0.5rem;
+}
+
+.pa-actions {
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 0 1rem !important;
+}
+
+.dashboard-text {
+    text-align: left;
+    font: normal normal 600 2.5rem Open Sans;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+}
+
+.col-title {
+    text-align: left;
+    font: normal normal normal 20px/30px Open Sans;
+    letter-spacing: 0px;
+    color: #484848;
+    opacity: 1;
+}

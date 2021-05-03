@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #593cab;
+      }
+    </style>
+  </defs>
+  <path id="Filter" class="cls-1" d="M28.592-26.25H1.408a1.407,1.407,0,0,0-.994,2.4L11.25-13.011V-.937a1.406,1.406,0,0,0,.6,1.152l4.688,3.28A1.407,1.407,0,0,0,18.75,2.343V-13.011L29.587-23.849A1.407,1.407,0,0,0,28.592-26.25Z" transform="translate(0 26.25)"/>
+</svg>

@@ -1,0 +1,74 @@
+.cloud-spinner {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+  }
+  .cloud-spinner svg {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 16px 6px rgb(84, 75, 177);
+    animation: cloud-spinner 1.5s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .cloud-spinner svg:after,
+  .cloud-spinner svg:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 52px;
+    height: 52px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+  .cloud-spinner svg:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+  }
+  .cloud-spinner svg:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+  }
+  .g1 {animation: g1 1s linear infinite;}
+  .g2 {animation: g2 2s linear infinite;}
+  .g3 {animation: g3 1s linear infinite;}
+  @keyframes cloud-spinner {
+    0% {
+      transform: scale(0.95);
+    }
+    5% {
+      transform: scale(1.2);
+    }
+    39% {
+      transform: scale(0.75);
+    }
+    45% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  
+  @keyframes g1 {
+    0%,71% {fill:#0098cc}
+    72% {fill:#595a5a}
+    75%,100% {fill:#ed7d31}
+    }
+
+@keyframes g2 {
+    0%,71% {fill:#595a5a}
+    72% {fill:#ed7d31}
+    75%,100% {fill:#0098cc}
+    }
+@keyframes g3 {
+    0%,71% {fill:#ed7d31}
+    72% {fill:#0098cc}
+    75%,100% {fill:#595a5a}
+    }

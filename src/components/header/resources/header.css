@@ -1,0 +1,236 @@
+/* .bg-light {
+  background-color: #204F8E!important;
+  z-index: 999;
+} */
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  margin-left: 0.8rem;
+}
+
+.navbar-light .navbar-brand {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+  color: #fff;
+}
+
+li.nav-item {
+  margin: 10px 15px;
+}
+
+@media screen and (min-width: 992px) {
+  li.nav-item {
+    margin: auto 15px;
+  }
+}
+
+/* 
+.btn-outline-success {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  margin-right: 6rem;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+} */
+
+/* .logo {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  color: #B7D6FF !important;
+  opacity: 1;
+} */
+
+.auth-logo {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  cursor: pointer;
+}
+
+.profile-row {
+  border-bottom: 0.5px solid #204F8E;
+  width: fit-content;
+}
+
+.auth-light {
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  min-height: 3.75rem;
+  background: #593CAB 0% 0% no-repeat;
+}
+
+.mr-55 {
+  margin-right: 55px;
+}
+
+.txt-cl {
+  color: #204F8E;
+}
+
+.dropdown-menu {
+  min-width: 5rem;
+  border: none;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 12px;
+  left: inherit;
+  right: 0;
+}
+
+.dropdown-item {
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+/* .upload-btn {
+  color: #FFFFFF;
+  background: #204F8E;
+  text-align: center;
+  vertical-align: middle;
+  width: 142px;
+  height: 32px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+} */
+
+/* .active {
+  text-align: left;
+  font: normal normal bold 17px/21px Lato;
+  letter-spacing: 0px;
+  color: #FFFFFF !important;
+  opacity: 1;
+  border-bottom: 0.5px solid #FFFFFF;
+  width: fit-content;
+} */
+
+/* 
+.logo-without-login {
+  content: url('../../../assets/amplifi-logo-white.svg');
+  border: none;
+} */
+
+.logo-with-login {
+  content: 'Concierto.Cloud';
+  border: none;
+}
+
+.fs {
+  font-size: 1.0625rem;
+}
+
+.padLeft-1 {
+  padding-left: 1rem;
+  background: inherit;
+}
+
+@media only screen and (max-width:991px) {
+  .navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    margin-left: 0.8rem;
+  }
+}
+
+/* .ma-profile {
+  margin: auto;
+  margin-left: 1rem;
+} */
+
+.select-cli {
+  min-width: 11.3125rem;
+  border: none;
+  background: inherit;
+  color: #fff;
+  border-bottom: 0.5px solid #8f92c1;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff !important;
+  font-size: 1.2rem !important;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.dot {
+  padding: 6px 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  background: #4BC6B9 0% 0% no-repeat padding-box;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.dropdown-toggle::after {
+  content: url('../../assets/resources/chevron-up-icon.svg');
+  display: inline-block;
+  margin-left: initial;
+  vertical-align: unset;
+  border-top: none;
+  border-right: none;
+  border-bottom: 0;
+  border-left: .6em solid transparent;
+}
+
+.notification {
+  content: url('../../assets/resources//notification-icon.svg');
+}
+
+.profile {
+  width: 90%;
+  float: left;
+  /* margin: 1rem; */
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.client-dw {
+  right: 0;
+  left: unset !important;
+  font-size: 0.9rem !important;
+  min-width: 12rem !important;
+  overflow-y: scroll;
+  width: 196px;
+  height: 166px;
+  font: normal normal 600 16px/22px Open Sans;
+}
+
+#navbarTogglerDemo01 .dropdown:hover>.dropdown-menu, #dropdownMenuButton .dropdown:hover>.dropdown-menu {
+  display: none;
+}
+
+.profilediv .dropdown-toggle::after {
+  content: url('../../assets/resources/chevron-icon.svg') !important;
+  vertical-align: middle !important;
+}

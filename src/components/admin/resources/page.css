@@ -1,0 +1,27 @@
+.cancel-btn {
+text-align: left;
+font: normal normal normal 1rem Open Sans;
+letter-spacing: 0px;
+color: #5C3EB0;
+opacity: 1;
+}
+
+.start-config-btn {
+text-align: left;
+font: normal normal normal 1rem Open Sans;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+
+.btn-start-config {
+background: #5C3EB0 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.prometheus-input {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 0.5px solid #C1C2C2;
+    opacity: 1;
+    border-radius: 0px;
+    }

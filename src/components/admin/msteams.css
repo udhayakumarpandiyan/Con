@@ -1,0 +1,191 @@
+/* teams tab styles */
+
+.teamBox {
+    margin: 10px;
+    float: left;
+    background: #FFFFFF;
+    overflow: auto;
+    width: 381px;
+    height: 594px;
+    border: 0.5px solid #C1C2C2;
+    z-index: 999;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.teamHead {
+    background: #464775 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: 4.2rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.teamSubBox {
+    color: #1f1d1d;
+    margin: 10px 10px 10px 20px;
+    font-weight: bold;
+    height: auto;
+    width: 89%;
+}
+
+.teamRow {
+    padding: 20px;
+}
+
+.teamText {
+    padding: 10px 10px 10px 0px;
+    width: 100%;
+    color: #707070;
+    font-size: 13px;
+}
+
+.channelText {
+    border: 0px solid #ccc;
+    display: inline-block;
+    width: 65%;
+    margin-left: 20px;
+    color: #707070;
+    font-size: 12px;
+    cursor: default;
+}
+
+.channelText:hover {
+    color: #000000
+}
+
+.teamIcon {
+    margin-right: 10px;
+    background: #2DC241 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    color: #FFF;
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    line-height: 33px;
+    text-align: center;
+}
+
+.teamArrow {
+    padding: 0px 2px 0px 4px;
+    opacity: 1;
+    color: #5D5D5D;
+    display: inline-block;
+    line-height: 33px;
+    text-align: center;
+}
+
+.teamBoxFooter {
+    padding: 20px;
+}
+
+.ul-list, #myUL {
+    list-style-type: none;
+    padding-left: 0px;
+    font-weight: bold;
+}
+
+/* Style the caret/arrow */
+
+.caret {
+    cursor: pointer;
+    user-select: none;
+    /* Prevent text selection */
+    width: 87%;
+    display: inline-block;
+    padding: 4px;
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+
+.caret::before {
+    content: "›";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+
+.caret-down {
+    background: #F4F4F4;
+}
+
+.caret-down::before {
+    transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+
+.nested {
+    display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+
+.active-team {
+    display: block;
+}
+
+.teams-head {
+    width: 75%;
+    align-self: center;
+    text-align: left;
+    font-size: 1.5625rem;
+    font-family: Open Sans;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.ms-teams-icon {
+    content: url('../assets/adminWidgets/msteams-white.svg');
+}
+
+.active-channel {
+    color: #000;
+    background-color: #efefef;
+}
+
+.input-ct {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid gray;
+}
+
+.select-ct {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid gray;
+    width: 100%
+}
+
+.add-channel, .add-member {
+    background-color: rgb(255, 255, 255);
+    border: 0.5px solid rgb(112, 112, 112);
+    margin: 1.25rem;
+    width: 6.25rem;
+}
+
+.ms-teams-label {
+text-align: left;
+font: normal normal bold 1rem Open Sans;
+letter-spacing: 0px;
+color: #707070;
+opacity: 1;
+}
+
+.ms-teams-input {
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 0.5px solid #C1C2C2;
+opacity: 1;
+border-radius: 0px;
+}

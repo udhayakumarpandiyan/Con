@@ -1,0 +1,55 @@
+# Default values for user-interface.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: 54.203.55.161:5000/user-interface
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  annotations: 
+     kubernetes.io/ingress.class: nginx
+     kubernetes.io/tls-acme: "true"
+     nginx.ingress.kubernetes.io/proxy-body-size: 500m
+     ingress.kubernetes.io/proxy-body-size: 500m
+     nginx.ingress.kubernetes.io/configuration-snippet: |
+        more_set_headers "X-Frame-Options: SAMEORIGIN";
+        more_set_headers "X-Content-Type-Options: nosniff";
+        more_set_headers "X-XSS-Protection: 1; mode=block";
+     
+  path: /
+  hosts:
+    - dev1.concierto.in
+    - dev.concierto.in
+  tls: 
+     - secretName: custom-tls-cert
+       hosts:
+         - dev1.concierto.in
+         - dev.concierto.in
+        
+
+resources: 
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+    limits:
+     cpu: 750m
+     memory: 1500Mi
+    requests:
+     cpu: 750m
+     memory: 1000Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

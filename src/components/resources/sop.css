@@ -1,0 +1,9 @@
+.sop-tags {
+    width: 100px;
+    background-color: rgb(0, 143, 251);
+    margin: 10px 10px 10px 0;
+    padding: 3px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+  }

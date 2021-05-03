@@ -1,0 +1,47 @@
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-wrap .flex-div {
+    flex: 0 0 28%;
+    margin: 2rem 1.5rem;
+}
+
+.flex-wrap .flex-div-40 {
+    flex: 0 0 40%;
+    margin: 2rem 1.5rem;
+}
+
+.button_cls_light {
+    min-width: 143px;
+    text-align: center;
+    min-height: 2.4rem;
+    margin: 0px 1rem;
+    border: 0.5px solid #5C3EB0;
+    cursor: pointer;
+    color: #5C3EB0;
+    background-color: white;
+}
+
+.button_cls_dark {
+    min-width: 143px;
+    text-align: center;
+    min-height: 2.4rem;
+    margin: 0rem 1rem;
+    border: 0.5px solid #5C3EB0;
+    cursor: pointer;
+    color: #5C3EB0;
+    background: #5C3EB0;
+    color: white;
+}
+
+.button-align-div {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.margin-set {
+    margin: 2rem 1.5rem;
+}

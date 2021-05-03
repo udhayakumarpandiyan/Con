@@ -1,0 +1,315 @@
+.tickets-main-container {
+  background-color: #f4f4f4;
+  padding: 2rem;
+}
+
+.open-tickets-main {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.search-icon {
+  /* position: absolute;
+        top: 5px;
+        left: 0;
+        padding-left: 5px; */
+  display: flex;
+  margin-left: 0.5rem;
+}
+
+.right-sec {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.left-sec {
+  margin-left: 2rem;
+}
+
+.left-sec .btn {
+  padding: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+.des-arrow {
+  display: none;
+}
+
+.filter .btn {
+  outline: none;
+  box-shadow: none;
+}
+
+.filter svg, .timer-icon svg {
+  color: #7d7f7d;
+}
+
+.edit-btn {
+  padding: 0;
+}
+
+.my-table tr:hover {
+  background-color: #f2f2f2;
+}
+
+.my-table thead th, .my-table tbody td {
+  border-top: none;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.my-table td span {
+  color: #484848;
+}
+
+.my-table td {
+  color: #484848;
+  font-size: 1rem;
+  border-radius: 2px;
+}
+
+.my-table thead th:first-child {
+  padding-left: 0.5rem;
+}
+
+.my-table tbody td:first-child {
+  padding-left: 0.5rem;
+}
+
+.timer-sec {
+  display: flex;
+  justify-content: start;
+  align-self: center;
+}
+
+.timer-icon {
+  line-height: 21px;
+  margin-right: 0.3rem;
+}
+
+.subject-text {
+  max-width: 19rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.input-style {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #bfbcbc;
+  width: 100%
+}
+
+.select-style {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #bfbcbc;
+  width: 100%
+}
+
+.edit-ticket-pad {
+  padding: 10px 0px;
+}
+
+.form-row>.col, .form-row>[class*=col-] {
+  padding-right: 23px;
+  padding-left: 5px;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.side-panel {
+  height: auto;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 53px;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 10px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 16px #0000001A;
+  border: 1px solid #F2F2F2;
+}
+
+.side-panel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-panel a:hover {
+  color: #f1f1f1;
+}
+
+.side-panel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .side-panel {
+    padding-top: 15px;
+  }
+  .side-panel a {
+    font-size: 18px;
+  }
+}
+
+.updateUsersData {
+  margin: 0;
+  max-width: 100%;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  /* line-height: 1.21428571em; */
+  padding: 0.4em 0.5em;
+  background: #fff;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  color: rgba(0, 0, 0, 0.87);
+  /* border-radius: 0.28571429rem; */
+  -webkit-transition: box-shadow 0.1s ease, border-color 0.1s ease;
+  -webkit-transition: border-color 0.1s ease, -webkit-box-shadow 0.1s ease;
+  transition: border-color 0.1s ease, -webkit-box-shadow 0.1s ease;
+  -o-transition: box-shadow 0.1s ease, border-color 0.1s ease;
+  transition: box-shadow 0.1s ease, border-color 0.1s ease;
+  transition: box-shadow 0.1s ease, border-color 0.1s ease, -webkit-box-shadow 0.1s ease;
+  font-size: 13px;
+  /* position: relative; */
+}
+
+.updateUsersData .dataTag {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: baseline;
+  margin: 0 0.14285714em;
+  background-color: #f3f3f3;
+  background-image: none;
+  padding: 0.5833em 0.833em;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: none;
+  font-weight: 600;
+  border: 0 solid transparent;
+  border-radius: 0.28571429rem;
+  -webkit-transition: background 0.1s ease;
+  -o-transition: background 0.1s ease;
+  transition: background 0.1s ease;
+  font-size: 0.8rem;
+}
+
+.inputfile-span {
+  border-bottom: 1px solid #bfbcbc;
+  padding: 5px;
+  margin-left: 1rem;
+}
+
+.edit-ticket-modal-title {
+  text-align: left;
+  font: normal normal 600 1.563rem Open Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+
+.edit-ticket-label {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #484848;
+  opacity: 1;
+}
+
+.edit-ticket-select {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+
+.edit-ticket-input {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+
+.edit-ticket-save-btn {
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #593CAB;
+  text-transform: capitalize;
+  opacity: 1;
+  padding: 2px;
+}
+
+.side-panel-modal-title {
+  text-align: left;
+  font: normal normal 600 20px/30px Open Sans;
+  letter-spacing: 0px;
+  color: #484848;
+  opacity: 1;
+}
+
+.side-panel-label {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #484848;
+  opacity: 1;
+}
+
+.side-panel-select {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+
+.side-panel-input {
+  text-align: left;
+  font: normal normal normal 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+
+.ticket-table-th-label {
+  text-align: left;
+  font: normal normal 600 1rem Open Sans;
+  letter-spacing: 0px;
+  color: #484848;
+  opacity: 1;
+}
+
+.priority {
+  position: relative;
+  bottom: 2px;
+}
+
+#AddNewTicketModal label span {
+  width: 1rem !important;
+}
+
+.inputfile-span span {
+  width: inherit !important;
+  /* display: inline; */
+}

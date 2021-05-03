@@ -1,0 +1,60 @@
+{
+    "dashboard": "My Dashboard",
+    "Hover-text": "The SLA Response & Resolution times defined here are applicable for the specific Client or Project Only. Resolution Time will be calculated from the time the ticket is logged to the time the ticket status is changed to Closed.",
+    "Emergency": {
+        "label": "Emergency",
+        "color": "#F5187E",
+        "intervals": [
+            ">60",
+            60,
+            50,
+            40,
+            30,
+            20,
+            10,
+            0
+        ]
+    },
+    "High priority": {
+        "label": "High priority",
+        "color": "#CC141E",
+        "intervals": [
+            ">180",
+            180,
+            150,
+            120,
+            90,
+            60,
+            30,
+            0
+        ]
+    },
+    "Normal priority": {
+        "label": "Normal priority",
+        "color": "#F08943",
+        "intervals": [
+            ">3000",
+            3000,
+            2500,
+            2000,
+            1500,
+            1000,
+            500,
+            0
+        ]
+    },
+    "Low priority": {
+        "label": "Low priority",
+        "color": "#F1C21B",
+        "intervals": [
+            ">6000",
+            6000,
+            5000,
+            4000,
+            3000,
+            2000,
+            1000,
+            0
+        ]
+    }
+}

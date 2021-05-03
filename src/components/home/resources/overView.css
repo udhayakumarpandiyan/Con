@@ -1,0 +1,386 @@
+/* All Tickets css start here  */
+
+.heading-tickets {
+  font-size: 1.5625rem;
+  font-family: Open Sans;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.emergency-sec {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.emergency-sec img, .side-icons {
+  width: 1.45rem;
+  height: 2rem;
+  margin-top: -0.25rem;
+}
+
+.title {
+  margin-left: 0.5rem;
+  font-size: 1.55rem;
+  color: #484848;
+}
+
+.high {
+  color: #cc141e;
+}
+
+.normal {
+  color: #f08943;
+}
+
+.low {
+  color: #f1c21b;
+}
+
+.tickets-container {
+  background-color: #fff;
+  padding: 0rem;
+}
+
+.allTickets svg {
+  width: 1.4375rem;
+  height: 1.4375rem;
+  position: relative;
+  top: 0.15rem;
+}
+
+.exception-sec img {
+  width: 1.5rem;
+  height: 2rem;
+}
+
+.ticket-item {
+  /* display: flex;
+    justify-content: flex-start;
+    align-items: center; */
+  display: block;
+  /* padding-top: 1.4rem; */
+  padding-bottom: 1.4rem;
+}
+
+.heading-ticket-sec {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start;
+    align-items: center; */
+}
+
+.heading-count {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.count-value {
+  font-size: 1.9375rem;
+  color: #222222;
+  margin-left: 0.5rem;
+}
+
+.sla-title {
+  color: #484848;
+  font-size: 0.95rem;
+}
+
+.time {
+  color: #484848;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.sla-time-sec {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.2rem;
+  margin-top: 1.875rem;
+}
+
+.total-sec {
+  position: relative;
+}
+
+.total-sec .sla-time-sec {
+  margin-left: 0;
+}
+
+.total-sec .count-value {
+  margin-left: 0;
+  color: #593cab;
+}
+
+.total-sec .title {
+  color: #593cab;
+}
+
+.total-sec .left-border {
+  border-left: 1px solid #e6e6e6;
+  position: absolute;
+  height: 88%;
+  width: 1px;
+  top: 0.625rem;
+  left: 0;
+}
+
+.border-line {
+  border-radius: 0.3125rem;
+  margin-top: 1rem;
+  position: absolute;
+  width: 80%;
+  bottom: 0px;
+}
+
+.emergency-sec .border-line {
+  border: 0.3125rem solid #f5187e;
+}
+
+.high-sec .border-line {
+  border: 0.3125rem solid #cc141e;
+}
+
+.normal-sec .border-line {
+  border: 0.3125rem solid #f08943;
+}
+
+.low-sec .border-line {
+  border: 0.3125rem solid #f1c21b;
+}
+
+.exception-sec .border-line {
+  border: 0.3125rem solid #7d7f7d;
+}
+
+.total-sec .border-line {
+  border: 0.3125rem solid #593cab;
+}
+
+/* All Tickets css end here  */
+
+/* Ticket Activity css start here  */
+
+.ticket-activity-event-main {
+  /* margin: 1rem; */
+  /* background-color: #fff; */
+  padding: 1.5rem;
+}
+
+.ticket-activity-sec, .event-activity {
+  background-color: #fff;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.events-covered {
+  font-size: 1.9375rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.events-covered .count {
+  font-weight: bold;
+  color: #222222;
+}
+
+.comp-heading .comp-title {
+  color: #222222;
+  font-size: 1.5625rem;
+  font-family: Open Sans;
+}
+
+.comp-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Ticket Activity css end here  */
+
+/*event activity css start here */
+
+/* progress bar css start here */
+
+.progress {
+  width: 150px;
+  height: 150px;
+  background: none;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress>span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 6px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.progress .progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.charting-area {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.ack-main-sec {
+  /* margin-left: 1rem; */
+}
+
+.title-count {
+  font-size: 1.9375rem;
+  font-weight: 600;
+  color: #222222;
+}
+
+/* .event-activity-btn:active+.custom-dropdown-menu, .event-activity-btn:focus+.custom-dropdown-menu, .ticket-activity-btn:active+.custom-dropdown-menu, .ticket-activity-btn:focus+.custom-dropdown-menu {
+  display: block;
+} */
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+  }
+}
+
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}
+
+/* progress bar css end here */
+
+/* event activity css end here */
+
+@media screen and (max-width: 767px) {
+  /* All Tickets css start here  */
+  .heading-count {
+    align-items: center;
+  }
+  .heading-ticket-sec {
+    flex-direction: inherit;
+    align-items: center;
+  }
+  .total-sec .count-value {
+    margin-left: 0.3125rem;
+  }
+  .total-sec .sla-time-sec {
+    margin-left: 2.2rem;
+  }
+  .ticket-item {
+    margin-bottom: 1rem;
+  }
+  .events-covered {
+    display: block;
+  }
+  /* All Tickets css end here  */
+  .event-activity-main {
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .event-activity-main .event-activity {
+    margin: 0 !important;
+  }
+}
+
+.list-unstyled li {
+  padding: 0.3rem;
+}
+
+.date {
+  float: left;
+  margin-left: -22px;
+  transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-50deg);
+  /* Opera, Chrome, and Safari */
+}
+
+.inp {
+  float: left;
+  margin-top: 50px;
+}
+
+.all-tickets {
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}

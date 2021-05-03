@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="15.686" viewBox="0 0 22 15.686">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #593cab;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Hamberger_Menu" data-name="Hamberger Menu" transform="translate(1 1)">
+    <line id="Line_6" data-name="Line 6" class="cls-1" x2="20"/>
+    <line id="Line_7" data-name="Line 7" class="cls-1" x2="20" transform="translate(0 6.843)"/>
+    <line id="Line_8" data-name="Line 8" class="cls-1" x2="20" transform="translate(0 13.686)"/>
+  </g>
+</svg>

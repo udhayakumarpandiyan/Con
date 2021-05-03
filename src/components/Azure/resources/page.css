@@ -1,0 +1,143 @@
+.azure-header-buttons {
+    font: normal normal normal 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #5C3EB0;
+    text-transform: capitalize;
+    opacity: 1;
+    min-width: 7.25rem;
+    min-height: 2.5rem;
+    border: 1px solid #5C3EB0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    margin: 0px 6px;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.azure-add-new {
+    background: #593CAB 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+.hots-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+.hots-actions button {
+    /* background: #F2F2F2 0% 0% no-repeat padding-box; */
+    opacity: 1;
+    border: none;
+    font: normal normal 600 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #5D5D5D;
+    margin: 0px 0.4rem;
+    height: 2rem;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.has-search input {
+    width: 13.75rem !important;
+    height: 2rem;
+    border-radius: 0;
+}
+
+.azure-table thead th {
+    border-top: none;
+}
+
+.azure-table thead th span {
+    text-align: left;
+    font: normal normal 600 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.azure-table tbody span {
+    text-align: left;
+    font: normal normal normal 1rem Open Sans;
+    letter-spacing: 0px;
+    color: #484848;
+    opacity: 1;
+    word-break: break-word;
+}
+
+.azure-col-name {
+    width: 140px;
+    max-width: 150px;
+}
+
+.azure-col-project {
+    width: 190px;
+    max-width: 200px;
+}
+
+.azure-col-account {
+    width: 150px;
+    max-width: 160px;
+}
+
+.azure-col-sn {
+    width: 65px;
+    max-width: 65px;
+}
+
+.azure-text-box {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid gray;
+    opacity: 1;
+}
+
+label {
+    color: #484848;
+}
+
+.btn-azure {
+    border: 2px solid #2196F3;
+    background-color: white;
+    color: black;
+    padding: 7px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.azure-col-inst {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#azure-page .dd-wrapper {
+    background: #f2f2f2 !important;
+}
+
+#azure-page .dd-list-item {
+    font-size: 0.9rem !important;
+}
+
+#azure-page .dd-scroll-list {
+    overflow-x: hidden !important;
+}
